@@ -1,1 +1,1 @@
-# mlcast-datasets-DMI
+# mlcast-dataset-DMI
