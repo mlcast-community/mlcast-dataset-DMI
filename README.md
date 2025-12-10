@@ -1,9 +1,9 @@
 # mlcast-dataset-DMI
 This repository contains code to convert the HDF5 files from the DMI-radar dataset to Zarr format. The process is as follow:
-  1. Extract the HDF5 files from the tar archive file. For this the `tarfile` python package.
-  2. Then using  the `xarray` python package to read the data of the HDF5 and create a dataset.
+  1. Extract the HDF5 files from the tar archive file. For this the `tarfile` python package is used.
+  2. Then use the `xarray` python package to read the data from the HDF5 file and create a dataset.
   3. Combine all the datasets through the `time` dimension.
-  4. Finally, convert the final dataset in to zarr by using the `to_zarr()` function from `xarray`.
+  4. Finally, convert the final dataset into zarr by using the `to_zarr()` function from `xarray`.
 
 ##Usage
 
