@@ -2,8 +2,8 @@ import os
 import numpy as np
 import xarray as xr
 import zarr
-from .config import *
-from .utils import extract_tars,create_empty_data,get_coords
+from config import *
+from utils import extract_tars,create_empty_data,get_coords
 import logging
 from numcodecs import Zstd
 import calendar
@@ -79,5 +79,6 @@ def extract_tars_and_store(full_path,X,Y,lat,lon,crs_attrs,encoding,zarr_path,it
               it_exist = 1
             else:
               it_exist = 0
-            extract_tars_and_store(full_path,X,Y,lat,lon,crs_attrs,encoding,RADAR_ZARR/'DMI_DataSet_500m.zarr',it_exist)
+            out_name = f'DMI_DataSet_{SpatialRes}m_10min.zarr'
+            extract_tars_and_store(full_path,X,Y,lat,lon,crs_attrs,encoding,RADAR_ZARR/out_name,it_exist)
                 
