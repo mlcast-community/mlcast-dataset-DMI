@@ -5,7 +5,7 @@ RADAR_ZARR = Path("/dmidata/projects/radar/products/composite/zarrComposite/prod
 RADAR_ZTEMP = Path("/dmidata/projects/radar/products/composite/zarrComposite/tmp_folder")
 
 init_year = '2016'
-final_year = '2024'
+final_year = '2025'
 is_new = 0
 
 SpatialRes = 500 # 1000
